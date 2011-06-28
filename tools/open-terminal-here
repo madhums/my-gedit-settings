@@ -1,0 +1,14 @@
+#!/bin/sh
+# [Gedit Tool]
+# Comment=Open a terminal in the document location
+# Name=Open terminal here
+# Shortcut=<Control>t
+# Languages=
+# Applicability=local
+# Output=output-panel
+# Input=nothing
+# Save-files=nothing
+
+
+#TODO: use "gconftool-2 -g /desktop/gnome/applications/terminal/exec"
+gnome-terminal --working-directory=$GEDIT_CURRENT_DOCUMENT_DIR &

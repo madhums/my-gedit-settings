@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets language="js">
+  <snippet>
+    <text><![CDATA[console.log(${1:anything to log})$0]]></text>
+    <tag>cl</tag>
+    <description>console.log</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[function(${1:arguments}){
+	
+}$0]]></text>
+    <tag>sfn</tag>
+    <description>sfunction</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[var ${1:variableName} = require('${2:moduleName}');]]></text>
+    <tag>sreq</tag>
+    <description>srequire</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[if(${1:condition}) {
+	
+}$0]]></text>
+    <tag>sif</tag>
+    <description>sif</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[if(${1:condition}) {
+	
+} else {
+	
+}$0]]></text>
+    <tag>sifelse</tag>
+    <description>sifelse</description>
+  </snippet>
+</snippets>
