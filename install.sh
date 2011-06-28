@@ -1,6 +1,4 @@
 #!/bin/sh
-# Kill all runing instances if exists
-# killall gedit
 
 # Copy language definitions
 mkdir -p ~/.local/share/gtksourceview-2.0/language-specs
@@ -33,7 +31,7 @@ cp snippets/* ~/.gnome2/gedit/snippets/
 if [ ! -d $HOME/.gnome2/gedit/plugins ]; then
     mkdir -p ~/.gnome2/gedit/plugins
 fi
-cp -R plugin/* ~/.gnome2/gedit/plugins/
+cp -R plugins/* ~/.gnome2/gedit/plugins/
 #done
 
 
@@ -45,8 +43,7 @@ cp styles/* ~/.gnome2/gedit/styles/
 #done
 
 
-gconftool-2 --set /apps/gedit-2/plugins/active-plugins -t list --list-type=str [align , completion , filebrowser, terminal , snippets , gedit_openfiles, reopen-tabs, smart_highlight, pair_char_completion, tabswitch]
-
+gconftool-2 --set /apps/gedit-2/plugins/active-plugins -t list --list-type=str [align,completion,filebrowser,terminal,snippets,gedit_openfiles,reopen-tabs,smart_highlight,pair_char_completion,tabswitch]
 gconftool-2 --set /apps/gedit-2/preferences/editor/auto_indent/auto_indent -t bool true
 gconftool-2 --set /apps/gedit-2/preferences/editor/bracket_matching/bracket_matching -t bool true
 gconftool-2 --set /apps/gedit-2/preferences/editor/current_line/highlight_current_line -t bool true
@@ -60,4 +57,3 @@ gconftool-2 --set /apps/gedit-2/preferences/editor/tabs/tabs_size -t int 2
 gconftool-2 --set /apps/gedit-2/preferences/editor/wrap_mode/wrap_mode -t str GTK_WRAP_NONE
 gconftool-2 --set /apps/gedit-2/preferences/editor/save/create_backup_copy -t bool false
 echo "Configuration set."
-
