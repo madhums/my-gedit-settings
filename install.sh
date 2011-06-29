@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Copy language definitions
 mkdir -p ~/.local/share/gtksourceview-2.0/language-specs
