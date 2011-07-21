@@ -56,4 +56,6 @@ gconftool-2 --set /apps/gedit-2/preferences/editor/tabs/insert_spaces -t bool tr
 gconftool-2 --set /apps/gedit-2/preferences/editor/tabs/tabs_size -t int 2
 gconftool-2 --set /apps/gedit-2/preferences/editor/wrap_mode/wrap_mode -t str GTK_WRAP_NONE
 gconftool-2 --set /apps/gedit-2/preferences/editor/save/create_backup_copy -t bool false
+gconftool-2 --set /apps/gedit-2/preferences/editor/font/editor_font -t str 'Droid Sans Mono 11'
+gconftool-2 --set /apps/gedit-2/preferences/editor/font/use_default_font -t bool false
 echo "Configuration set."
